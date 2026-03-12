@@ -1,0 +1,36 @@
+:root {
+  --font-manrope: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-jetbrains-mono: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
+
+  --container-max: 1200px;
+
+  --color-bg: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eef3f8;
+  --color-border: #d8e2ef;
+  --color-text: #102033;
+  --color-text-muted: #4e627a;
+
+  --color-brand-100: #dff9fb;
+  --color-brand-300: #88e6f0;
+  --color-brand-500: #12b7cf;
+  --color-brand-700: #0c8ca0;
+
+  --shadow-soft: 0 8px 24px rgb(11 31 52 / 0.08);
+  --shadow-card: 0 2px 10px rgb(11 31 52 / 0.06);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+}
