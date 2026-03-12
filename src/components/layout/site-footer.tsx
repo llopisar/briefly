@@ -6,17 +6,28 @@ const footerGroups = [
   {
     title: "Product",
     links: [
-      { href: "/product", label: "Features" },
+      { href: "/product", label: "Product" },
+      { href: "/actions", label: "Action Tracking" },
       { href: "/pricing", label: "Pricing" },
-      { href: "/solutions", label: "Solutions" },
+      { href: "/notes", label: "Notes Library" },
     ],
   },
   {
-    title: "Resources",
+    title: "Solutions",
     links: [
-      { href: "#", label: "Documentation" },
+      { href: "/solutions", label: "Startups" },
+      { href: "/solutions", label: "Product Teams" },
+      { href: "/solutions", label: "Agencies" },
+      { href: "/solutions", label: "Managers" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
       { href: "#", label: "Security" },
-      { href: "#", label: "API" },
+      { href: "#", label: "API Docs" },
+      { href: "#", label: "Changelog" },
+      { href: "#", label: "Contact" },
     ],
   },
 ];
@@ -24,11 +35,15 @@ const footerGroups = [
 export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface)]">
-      <Container className="grid gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr]">
-        <div>
-          <p className="text-lg font-semibold">MeetFlow</p>
-          <p className="mt-2 max-w-sm text-sm text-[var(--color-text-muted)]">
-            AI-powered meeting notes and follow-ups for high-velocity teams.
+      <Container className="grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="space-y-3">
+          <p className="text-lg font-semibold tracking-tight">MeetFlow</p>
+          <p className="max-w-sm text-sm text-[var(--color-text-muted)]">
+            AI meeting notes, summaries, and follow-up tracking for teams that value execution
+            clarity.
+          </p>
+          <p className="text-xs text-[var(--color-text-muted)]">
+            Built for product, operations, and client-facing teams.
           </p>
         </div>
         {footerGroups.map((group) => (
@@ -45,6 +60,17 @@ export function SiteFooter() {
             ))}
           </div>
         ))}
+      </Container>
+      <Container className="flex flex-col gap-2 border-t border-[var(--color-border)] py-6 text-xs text-[var(--color-text-muted)] sm:flex-row sm:items-center sm:justify-between">
+        <p>© {new Date().getFullYear()} MeetFlow, Inc. All rights reserved.</p>
+        <div className="flex gap-4">
+          <Link href="#" className="hover:text-[var(--color-text)]">
+            Privacy
+          </Link>
+          <Link href="#" className="hover:text-[var(--color-text)]">
+            Terms
+          </Link>
+        </div>
       </Container>
     </footer>
   );
