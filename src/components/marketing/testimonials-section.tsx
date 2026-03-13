@@ -1,4 +1,4 @@
-import { Container } from "@/components/shared/container";
+﻿import { Container } from "@/components/shared/container";
 import { Section } from "@/components/shared/section";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Card } from "@/components/ui/card";
@@ -10,7 +10,7 @@ export function TestimonialsSection() {
       <Container className="space-y-8">
         <SectionHeader
           eyebrow="Customer proof"
-          title="Teams use MeetFlow to improve follow-through"
+          title="Teams use Briefly to improve follow-through"
           description="Practical feedback from product and delivery teams that rely on accurate recaps and accountable actions."
         />
         <div className="grid gap-4 lg:grid-cols-3">
@@ -32,3 +32,4 @@ export function TestimonialsSection() {
     </Section>
   );
 }
+

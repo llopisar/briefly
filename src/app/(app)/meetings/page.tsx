@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 import { MeetingsTable } from "@/components/product/meetings-table";
 import { PageHeader } from "@/components/product/page-header";
@@ -67,10 +67,11 @@ export default function MeetingsPage() {
             )}
           </div>
           <p className="mt-3 text-xs text-[var(--color-text-muted)]">
-            Templates help MeetFlow structure summaries and action extraction for recurring calls.
+            Templates help Briefly structure summaries and action extraction for recurring calls.
           </p>
         </Card>
       </div>
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -16,7 +16,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-bg)]/92 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between gap-3">
         <Link href="/" className="text-lg font-semibold tracking-tight">
-          MeetFlow
+          Briefly
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-[var(--color-text-muted)] md:flex">
@@ -63,3 +63,4 @@ export function SiteHeader() {
     </header>
   );
 }
+

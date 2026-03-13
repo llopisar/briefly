@@ -1,4 +1,4 @@
-import { Container } from "@/components/shared/container";
+﻿import { Container } from "@/components/shared/container";
 import { PlaceholderPanel } from "@/components/shared/placeholder-panel";
 import { Section } from "@/components/shared/section";
 import { SectionHeader } from "@/components/shared/section-header";
@@ -9,7 +9,7 @@ export default function ProductPage() {
       <Container className="space-y-8">
         <SectionHeader
           eyebrow="Product"
-          title="MeetFlow feature architecture"
+          title="Briefly feature architecture"
           description="Placeholder route for detailed feature storytelling and product visuals."
         />
         <div className="grid gap-4 md:grid-cols-2">
@@ -26,3 +26,4 @@ export default function ProductPage() {
     </Section>
   );
 }
+

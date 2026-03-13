@@ -1,4 +1,4 @@
-import { Container } from "@/components/shared/container";
+﻿import { Container } from "@/components/shared/container";
 import { Section } from "@/components/shared/section";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Card } from "@/components/ui/card";
@@ -11,7 +11,7 @@ export function FeaturesGrid() {
         <SectionHeader
           eyebrow="Core features"
           title="Everything between the meeting and the next deliverable"
-          description="MeetFlow helps teams leave every call with a clear record of what was decided, who owns what, and what happens next."
+          description="Briefly helps teams leave every call with a clear record of what was decided, who owns what, and what happens next."
         />
         <div className="grid gap-4 md:grid-cols-2">
           {featureCards.map((feature) => (
@@ -39,3 +39,4 @@ export function FeaturesGrid() {
     </Section>
   );
 }
+

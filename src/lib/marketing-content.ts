@@ -1,4 +1,4 @@
-export const trustLogos = ["Notion", "Slack", "Linear", "HubSpot", "Zapier", "Figma"];
+﻿export const trustLogos = ["Notion", "Slack", "Linear", "HubSpot", "Zapier", "Figma"];
 
 export const featureCards = [
   {
@@ -10,7 +10,7 @@ export const featureCards = [
   {
     title: "Action items with clear ownership",
     description:
-      "MeetFlow detects tasks discussed in the meeting and turns them into trackable items with owner, due date, and priority.",
+      "Briefly detects tasks discussed in the meeting and turns them into trackable items with owner, due date, and priority.",
     points: ["Owner assignment", "Due-date suggestions", "Priority labels"],
   },
   {
@@ -74,13 +74,13 @@ export const pricingPlans = [
 export const testimonials = [
   {
     quote:
-      "Before MeetFlow, our PMs spent hours rewriting notes after planning calls. Now the recap is ready before the team leaves Zoom, with owners already assigned.",
+      "Before Briefly, our PMs spent hours rewriting notes after planning calls. Now the recap is ready before the team leaves Zoom, with owners already assigned.",
     author: "Nina Patel",
     role: "Head of Product, Craftlane",
   },
   {
     quote:
-      "We run 30+ client calls a week. MeetFlow gave us a consistent summary format we can share directly with clients and internal teams without manual cleanup.",
+      "We run 30+ client calls a week. Briefly gave us a consistent summary format we can share directly with clients and internal teams without manual cleanup.",
     author: "Andre Mota",
     role: "Delivery Lead, North Axis Agency",
   },
@@ -91,3 +91,4 @@ export const testimonials = [
     role: "Founder, VeroStack",
   },
 ];
+

@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+﻿import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/shared/container";
@@ -17,14 +17,14 @@ export function Hero() {
       <Container className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
         <div className="space-y-6 sm:space-y-8">
           <p className="inline-flex rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-brand-700)]">
-            MeetFlow for teams
+            Briefly for teams
           </p>
           <div className="space-y-5">
             <h1 className="max-w-xl text-3xl font-semibold tracking-tight text-[var(--color-text)] sm:text-5xl lg:text-7xl">
               Stop losing decisions in meeting notes.
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-[var(--color-text-muted)] sm:text-lg">
-              MeetFlow turns every meeting into a clear summary, assigned action list, and
+              Briefly turns every meeting into a clear summary, assigned action list, and
               searchable record so teams can move from discussion to execution faster.
             </p>
           </div>
@@ -77,3 +77,4 @@ export function Hero() {
     </section>
   );
 }
+

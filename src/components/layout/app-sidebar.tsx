@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -24,7 +24,7 @@ export function AppSidebar() {
   return (
     <aside className="hidden w-64 flex-col border-r border-[var(--color-border)] bg-[var(--color-surface)]/95 p-4 backdrop-blur-sm lg:flex">
       <Link href="/dashboard" className="px-3 py-2 text-lg font-semibold tracking-tight">
-        MeetFlow
+        Briefly
       </Link>
       <nav className="mt-6 space-y-1">
         {appNav.map((item) => {
@@ -50,3 +50,4 @@ export function AppSidebar() {
     </aside>
   );
 }
+

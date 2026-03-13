@@ -1,6 +1,6 @@
-# MeetFlow Frontend Scaffold
+﻿# Briefly Frontend Scaffold
 
-Next.js + TypeScript + Tailwind project scaffold for a portfolio-quality SaaS product concept: MeetFlow.
+Next.js + TypeScript + Tailwind project scaffold for a portfolio-quality SaaS product concept: Briefly.
 
 ## Stack
 
@@ -64,3 +64,4 @@ src/
 
 - Project is ready for Vercel-compatible build (`npm run build`)
 - `vercel.json` included for standard Next.js build/runtime defaults
+

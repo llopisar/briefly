@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+﻿import { ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/shared/container";
 import { Section } from "@/components/shared/section";
@@ -14,7 +14,7 @@ export function CtaBand() {
               Make every meeting end with a clear plan.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-[var(--color-text-muted)] sm:text-base">
-              Connect your calendar, record your next team call, and let MeetFlow generate a
+              Connect your calendar, record your next team call, and let Briefly generate a
               summary and action list your team can execute immediately.
             </p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
@@ -32,3 +32,4 @@ export function CtaBand() {
     </Section>
   );
 }
+
