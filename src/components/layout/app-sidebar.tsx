@@ -19,6 +19,7 @@ const navIcons: Record<string, ComponentType<{ size?: number; className?: string
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <aside className="hidden w-64 flex-col border-r border-[var(--color-border)] bg-[var(--color-surface)]/95 p-4 backdrop-blur-sm lg:flex">
@@ -26,24 +27,25 @@ export function AppSidebar() {
         MeetFlow
       </Link>
       <nav className="mt-6 space-y-1">
-        {appNav.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={cn(
-              "flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all duration-200",
-              pathname === item.href
-                ? "bg-[var(--color-surface-muted)] text-[var(--color-text)]"
-                : "text-[var(--color-text-muted)] hover:translate-x-0.5 hover:bg-[var(--color-surface-muted)] hover:text-[var(--color-text)]",
-            )}
-          >
-            {(() => {
-              const Icon = navIcons[item.href] ?? LayoutDashboard;
-              return <Icon size={15} />;
-            })()}
-            {item.label}
-          </Link>
-        ))}
+        {appNav.map((item) => {
+          const Icon = navIcons[item.href] ?? LayoutDashboard;
+
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all duration-200",
+                isActive(item.href)
+                  ? "bg-[var(--color-surface-muted)] text-[var(--color-text)]"
+                  : "text-[var(--color-text-muted)] hover:translate-x-0.5 hover:bg-[var(--color-surface-muted)] hover:text-[var(--color-text)]",
+              )}
+            >
+              <Icon size={15} />
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
     </aside>
   );

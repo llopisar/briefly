@@ -38,7 +38,7 @@ a {
 }
 
 .section-spacing {
-  padding-block: clamp(4rem, 7vw, 6.5rem);
+  padding-block: clamp(3.25rem, 7vw, 6.5rem);
 }
 
 @keyframes subtle-float {

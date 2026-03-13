@@ -17,12 +17,12 @@ export function PricingSection() {
           title="Pricing that scales with meeting volume"
           description="Start with a free trial and upgrade when your team needs deeper controls, reporting, and integrations."
         />
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid gap-3 sm:gap-4 lg:grid-cols-3">
           {pricingPlans.map((plan) => (
             <Card
               key={plan.name}
               className={cn(
-                "flex flex-col p-6",
+                "flex flex-col p-5 sm:p-6",
                 plan.highlighted
                   ? "border-[var(--color-brand-500)] bg-[var(--color-surface-elevated)] shadow-[var(--shadow-soft)]"
                   : "border-[var(--color-border)]",

@@ -12,15 +12,15 @@ const outcomes = [
 
 export function Hero() {
   return (
-    <section className="section-spacing relative overflow-hidden pb-12 pt-14 sm:pt-22">
+    <section className="section-spacing relative overflow-hidden pb-10 pt-10 sm:pb-12 sm:pt-16">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-[var(--color-brand-100)]/55 to-transparent" />
-      <Container className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-        <div className="space-y-8">
+      <Container className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
+        <div className="space-y-6 sm:space-y-8">
           <p className="inline-flex rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--color-brand-700)]">
             MeetFlow for teams
           </p>
           <div className="space-y-5">
-            <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-[var(--color-text)] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-xl text-3xl font-semibold tracking-tight text-[var(--color-text)] sm:text-5xl lg:text-7xl">
               Stop losing decisions in meeting notes.
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-[var(--color-text-muted)] sm:text-lg">
@@ -28,12 +28,12 @@ export function Hero() {
               searchable record so teams can move from discussion to execution faster.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 pt-1">
-            <Button size="lg" className="gap-2">
+          <div className="flex flex-col gap-3 pt-1 sm:flex-row sm:flex-wrap">
+            <Button size="lg" className="w-full gap-2 sm:w-auto">
               Start free trial
               <ArrowRight size={16} />
             </Button>
-            <Button size="lg" variant="secondary">
+            <Button size="lg" variant="secondary" className="w-full sm:w-auto">
               See product tour
             </Button>
           </div>
@@ -46,7 +46,7 @@ export function Hero() {
             ))}
           </ul>
         </div>
-        <Card className="relative overflow-hidden border-none bg-gradient-to-br from-[#d9f7fc] via-[#ffffff] to-[#ebf1ff] p-5 shadow-[var(--shadow-soft)] sm:p-6">
+        <Card className="relative overflow-hidden border-none bg-gradient-to-br from-[#d9f7fc] via-[#ffffff] to-[#ebf1ff] p-4 shadow-[var(--shadow-soft)] sm:p-6">
           <div className="absolute -right-16 -top-16 h-40 w-40 animate-[subtle-float_8s_ease-in-out_infinite] rounded-full bg-[var(--color-brand-300)]/40 blur-3xl" />
           <div className="relative space-y-4">
             <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">

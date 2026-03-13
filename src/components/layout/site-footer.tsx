@@ -35,7 +35,7 @@ const footerGroups = [
 export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--color-border)] bg-[var(--color-surface)]">
-      <Container className="grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <Container className="grid gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="space-y-3">
           <p className="text-lg font-semibold tracking-tight">MeetFlow</p>
           <p className="max-w-sm text-sm text-[var(--color-text-muted)]">
@@ -46,14 +46,15 @@ export function SiteFooter() {
             Built for product, operations, and client-facing teams.
           </p>
         </div>
+
         {footerGroups.map((group) => (
-          <div key={group.title} className="space-y-2">
+          <div key={group.title} className="space-y-1.5">
             <h3 className="text-sm font-semibold text-[var(--color-text)]">{group.title}</h3>
             {group.links.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="block text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+                className="block py-1.5 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
               >
                 {link.label}
               </Link>
@@ -61,6 +62,7 @@ export function SiteFooter() {
           </div>
         ))}
       </Container>
+
       <Container className="flex flex-col gap-2 border-t border-[var(--color-border)] py-6 text-xs text-[var(--color-text-muted)] sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} MeetFlow, Inc. All rights reserved.</p>
         <div className="flex gap-4">

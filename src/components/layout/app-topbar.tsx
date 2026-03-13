@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 
 export function AppTopbar() {
   const pathname = usePathname();
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="sticky top-0 z-30 border-b border-[var(--color-border)] bg-[var(--color-surface)]/90 backdrop-blur-sm">
@@ -29,7 +30,7 @@ export function AppTopbar() {
             href={item.href}
             className={cn(
               "whitespace-nowrap rounded-full border px-3 py-1 text-xs font-semibold transition-colors",
-              pathname === item.href
+              isActive(item.href)
                 ? "border-[var(--color-brand-300)] bg-[var(--color-brand-100)] text-[var(--color-brand-700)]"
                 : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-muted)] hover:bg-[var(--color-surface-muted)]",
             )}

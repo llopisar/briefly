@@ -16,6 +16,7 @@ npm run dev
 npm run build
 npm run start
 npm run lint
+npm run typecheck
 ```
 
 ## Project Structure
@@ -42,17 +43,17 @@ src/
     layout.tsx
   components/
     layout/
+    marketing/
+    product/
     shared/
     ui/
-  features/
   lib/
   styles/
-  types/
 ```
 
 ## Design Foundations
 
-- Typography: `Manrope` + `JetBrains Mono`
+- Typography: premium sans + mono fallback stacks via tokens
 - Tokens: color, spacing, radius, and elevation in `src/styles/tokens.css`
 - Reusable wrappers: `Container`, `Section`, `SectionHeader`
 - Base layout shells:

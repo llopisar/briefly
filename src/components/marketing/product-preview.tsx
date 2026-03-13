@@ -32,9 +32,9 @@ export function ProductPreview() {
           title="A workspace built for post-meeting execution"
           description="The interface connects summary quality, task follow-through, and meeting history so teams always know what was agreed and what is pending."
         />
-        <Card className="overflow-hidden p-5 sm:p-7">
+        <Card className="overflow-hidden p-4 sm:p-6 lg:p-7">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-muted)] p-4">
+            <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-muted)] p-3 sm:p-4">
               <div className="flex items-center justify-between border-b border-[var(--color-border)] pb-3">
                 <p className="text-sm font-semibold text-[var(--color-text)]">
                   Weekly product sync - Summary
@@ -58,7 +58,7 @@ export function ProductPreview() {
                 </div>
               </div>
             </div>
-            <div className="space-y-3">
+            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
               {previewCards.map((item) => (
                 <div
                   key={item.title}
