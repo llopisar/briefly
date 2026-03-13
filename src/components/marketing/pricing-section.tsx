@@ -14,8 +14,8 @@ export function PricingSection() {
       <Container className="space-y-8">
         <SectionHeader
           eyebrow="Pricing"
-          title="Plans that match team maturity"
-          description="Start with a free trial, then scale with workspace controls and integrations as your meeting volume grows."
+          title="Pricing that scales with meeting volume"
+          description="Start with a free trial and upgrade when your team needs deeper controls, reporting, and integrations."
         />
         <div className="grid gap-4 lg:grid-cols-3">
           {pricingPlans.map((plan) => (
@@ -24,7 +24,7 @@ export function PricingSection() {
               className={cn(
                 "flex flex-col p-6",
                 plan.highlighted
-                  ? "border-[var(--color-brand-500)] shadow-[var(--shadow-soft)]"
+                  ? "border-[var(--color-brand-500)] bg-[var(--color-surface-elevated)] shadow-[var(--shadow-soft)]"
                   : "border-[var(--color-border)]",
               )}
             >
@@ -46,7 +46,10 @@ export function PricingSection() {
               </Button>
               <ul className="mt-5 space-y-2">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex gap-2 text-sm text-[var(--color-text-muted)]">
+                  <li
+                    key={feature}
+                    className="flex gap-2 text-sm leading-relaxed text-[var(--color-text-muted)]"
+                  >
                     <Check size={16} className="mt-0.5 text-[var(--color-brand-700)]" />
                     {feature}
                   </li>

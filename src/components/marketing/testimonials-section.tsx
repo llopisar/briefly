@@ -10,8 +10,8 @@ export function TestimonialsSection() {
       <Container className="space-y-8">
         <SectionHeader
           eyebrow="Customer proof"
-          title="Teams using MeetFlow to tighten follow-through"
-          description="Feedback from product and delivery teams that rely on meeting clarity to ship work."
+          title="Teams use MeetFlow to improve follow-through"
+          description="Practical feedback from product and delivery teams that rely on accurate recaps and accountable actions."
         />
         <div className="grid gap-4 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
@@ -20,7 +20,9 @@ export function TestimonialsSection() {
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
               <div className="mt-5">
-                <p className="text-sm font-semibold text-[var(--color-text)]">{testimonial.author}</p>
+                <p className="text-sm font-semibold tracking-tight text-[var(--color-text)]">
+                  {testimonial.author}
+                </p>
                 <p className="text-xs text-[var(--color-text-muted)]">{testimonial.role}</p>
               </div>
             </Card>

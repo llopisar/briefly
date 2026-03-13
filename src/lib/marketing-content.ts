@@ -1,36 +1,29 @@
-export const trustLogos = [
-  "Notion",
-  "Slack",
-  "Linear",
-  "HubSpot",
-  "Zapier",
-  "Figma",
-];
+export const trustLogos = ["Notion", "Slack", "Linear", "HubSpot", "Zapier", "Figma"];
 
 export const featureCards = [
   {
-    title: "AI summaries built for decisions",
+    title: "Summaries that capture decisions, not just discussion",
     description:
-      "MeetFlow outputs concise summaries with context, blockers, and decisions so anyone can catch up without replaying a full call.",
-    points: ["Structured recap", "Decision highlights", "Team-ready format"],
+      "Each recap is structured around outcomes, blockers, and agreed next steps so teammates can act without watching the full recording.",
+    points: ["Outcome-first recap", "Decision log", "Share-ready format"],
   },
   {
-    title: "Action items with real ownership",
+    title: "Action items with clear ownership",
     description:
-      "Extract next steps automatically with owner, due date, and priority fields that map directly to your team workflow.",
-    points: ["Owner detection", "Due date suggestions", "Priority tags"],
+      "MeetFlow detects tasks discussed in the meeting and turns them into trackable items with owner, due date, and priority.",
+    points: ["Owner assignment", "Due-date suggestions", "Priority labels"],
   },
   {
-    title: "Search that remembers meetings",
+    title: "Search across every meeting in seconds",
     description:
-      "Find what was said across projects by keyword, participant, or topic and jump to the exact note or transcript moment.",
-    points: ["Semantic lookup", "Cross-meeting filters", "Instant jump links"],
+      "Find what was decided, who agreed to it, and where it was discussed without digging through old docs or chat threads.",
+    points: ["Topic + speaker search", "Cross-meeting filters", "Jump-to-moment links"],
   },
   {
-    title: "Follow-up visibility for managers",
+    title: "Follow-up visibility for managers and leads",
     description:
-      "Track unresolved items and stale follow-ups from one dashboard so meetings become execution checkpoints, not status theater.",
-    points: ["Pending actions board", "Overdue alerts", "Weekly digest"],
+      "Track unresolved items and overdue tasks from one dashboard so meetings become accountability checkpoints, not status theater.",
+    points: ["Pending task board", "Overdue alerts", "Weekly follow-up digest"],
   },
 ];
 
@@ -38,21 +31,26 @@ export const pricingPlans = [
   {
     name: "Starter",
     price: "$19",
-    description: "For small teams that need reliable meeting notes and follow-ups.",
-    cta: "Start free",
-    features: ["Up to 10 seats", "AI summaries", "Action extraction", "Searchable notes"],
+    description: "For early teams that need dependable notes and clear follow-through.",
+    cta: "Start free trial",
+    features: [
+      "Up to 10 seats",
+      "Meeting summaries",
+      "Action item extraction",
+      "Searchable notes library",
+    ],
     highlighted: false,
   },
   {
     name: "Growth",
     price: "$49",
-    description: "For product and operations teams running meetings every day.",
-    cta: "Try Growth",
+    description: "For teams running high meeting volume across product, ops, and client work.",
+    cta: "Choose Growth",
     features: [
       "Up to 50 seats",
       "All Starter features",
-      "Team dashboards",
-      "Integrations: Slack, Notion, Linear",
+      "Workspace dashboards",
+      "Slack, Notion, and Linear integrations",
       "Priority support",
     ],
     highlighted: true,
@@ -60,12 +58,13 @@ export const pricingPlans = [
   {
     name: "Enterprise",
     price: "Custom",
-    description: "For larger organizations with security and admin requirements.",
-    cta: "Talk to sales",
+    description: "For organizations that need advanced security, governance, and rollout support.",
+    cta: "Contact sales",
     features: [
       "Unlimited seats",
       "SSO + advanced roles",
-      "Data retention controls",
+      "Data retention policies",
+      "Security review support",
       "Dedicated onboarding",
     ],
     highlighted: false,
@@ -75,19 +74,19 @@ export const pricingPlans = [
 export const testimonials = [
   {
     quote:
-      "MeetFlow cut our meeting follow-up time in half. We now leave planning calls with owners and due dates already assigned.",
+      "Before MeetFlow, our PMs spent hours rewriting notes after planning calls. Now the recap is ready before the team leaves Zoom, with owners already assigned.",
     author: "Nina Patel",
     role: "Head of Product, Craftlane",
   },
   {
     quote:
-      "The summaries are crisp enough to share directly in Slack. It has become our source of truth for client standups.",
+      "We run 30+ client calls a week. MeetFlow gave us a consistent summary format we can share directly with clients and internal teams without manual cleanup.",
     author: "Andre Mota",
     role: "Delivery Lead, North Axis Agency",
   },
   {
     quote:
-      "Search is the killer feature. We can answer ‘when did we decide this?’ in seconds during roadmap discussions.",
+      "The search experience changed our roadmap meetings. When someone asks 'when did we decide this?', we can pull the exact moment in seconds.",
     author: "Luis Romero",
     role: "Founder, VeroStack",
   },

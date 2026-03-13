@@ -10,9 +10,9 @@ import { Section } from "@/components/shared/section";
 import { Card } from "@/components/ui/card";
 
 const metrics = [
-  { label: "Weekly meetings summarized", value: "28,000+" },
-  { label: "Action items tracked monthly", value: "210,000+" },
-  { label: "Avg. follow-up time reduced", value: "43%" },
+  { label: "Meetings summarized every week", value: "28,000+" },
+  { label: "Actions tracked each month", value: "210,000+" },
+  { label: "Average reduction in follow-up lag", value: "43%" },
 ];
 
 export default function HomePage() {

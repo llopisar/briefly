@@ -9,17 +9,17 @@ const previewCards = [
   {
     icon: CalendarCheck2,
     title: "Meeting timeline",
-    description: "See weekly summaries and unresolved decisions in one chronological view.",
+    description: "Review weekly recaps and unresolved decisions in one chronological feed.",
   },
   {
     icon: ListChecks,
     title: "Action pipeline",
-    description: "Track assigned tasks by owner, due date, and priority from each meeting.",
+    description: "Track follow-ups by owner, due date, and priority across all meetings.",
   },
   {
     icon: Search,
     title: "Smart search",
-    description: "Find exact moments from transcripts and linked notes across the workspace.",
+    description: "Find exact decisions and transcript moments across the full workspace.",
   },
 ];
 
@@ -29,8 +29,8 @@ export function ProductPreview() {
       <Container className="space-y-8">
         <SectionHeader
           eyebrow="Product preview"
-          title="A workspace designed for clarity after every meeting"
-          description="The product UI combines meeting recaps, action tracking, and searchable context so teams can move from discussion to execution quickly."
+          title="A workspace built for post-meeting execution"
+          description="The interface connects summary quality, task follow-through, and meeting history so teams always know what was agreed and what is pending."
         />
         <Card className="overflow-hidden p-5 sm:p-7">
           <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -45,14 +45,15 @@ export function ProductPreview() {
                 <div className="rounded-lg bg-[var(--color-surface)] p-3">
                   <p className="font-semibold text-[var(--color-text)]">Key outcomes</p>
                   <p className="mt-1 text-[var(--color-text-muted)]">
-                    Team approved beta rollout for smart templates and aligned onboarding copy
-                    changes before launch.
+                    Team approved phased rollout for new onboarding templates and aligned final
+                    copy changes before launch.
                   </p>
                 </div>
                 <div className="rounded-lg bg-[var(--color-surface)] p-3">
                   <p className="font-semibold text-[var(--color-text)]">Decisions</p>
                   <p className="mt-1 text-[var(--color-text-muted)]">
-                    Rollout starts Tuesday for 20% of workspaces with support monitoring enabled.
+                    Rollout starts Tuesday for 20% of workspaces, with support monitoring enabled
+                    from day one.
                   </p>
                 </div>
               </div>
@@ -61,7 +62,7 @@ export function ProductPreview() {
               {previewCards.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4"
+                  className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--color-brand-300)]"
                 >
                   <item.icon size={16} className="text-[var(--color-brand-700)]" />
                   <p className="mt-2 text-sm font-semibold text-[var(--color-text)]">{item.title}</p>
